@@ -93,7 +93,8 @@ def load_data_mlp(filename):
     #Load already scaled and transformed data
     #df = pl.scan_parquet(filename).collect()
     # Data from 2018 to 2019
-    df = pl.scan_parquet(filename).filter(pl.col("date") >= datetime(2018, 1, 1)).collect()
+    df = pl.scan_parquet(filename).filter((pl.col("date") >= datetime(2018, 1, 1))
+                                          & (pl.col("date") < datetime(2019, 1, 1))).collect()
     # df = scale_data(df)
     return df
 
@@ -104,11 +105,16 @@ def split_data(df):
     # test_df = df.filter((pl.col("date") >= datetime(2019, 1, 1)))
 
     # Split for one year
-    train_df = df.filter(pl.col('date') < datetime(2018, 10, 1))
-    val_df = df.filter((pl.col('date') >= datetime(2018, 10, 1))
-                       & (pl.col('date') < datetime(2018, 11, 15)))
-    test_df = df.filter((pl.col('date') >= datetime(2018, 11, 15))
-                        & (pl.col('date') < datetime(2019, 1, 1)))
+    # train_df = df.filter(pl.col('date') < datetime(2018, 10, 1))
+    # val_df = df.filter((pl.col('date') >= datetime(2018, 10, 1))
+    #                    & (pl.col('date') < datetime(2018, 11, 15)))
+    # test_df = df.filter((pl.col('date') >= datetime(2018, 11, 15)))
+
+    # Customer split
+    train_df = df.filter(pl.col("customer.id") <= 1200)
+    val_df = df.filter((pl.col("customer.id") > 1200) & (pl.col("customer.id") <= 1600))
+    test_df = df.filter(pl.col("customer.id") > 1600)
+
     return train_df, val_df, test_df
 
 def train_model(model, test_loader, train_loader, val_loader, criterion, optimizer, epochs=10):
