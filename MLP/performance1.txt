@@ -1,0 +1,69 @@
+Model Evaluation Report
+==================================================
+
+Evaluation Metrics (Training Data, Threshold 0.5000)
+==================================================
+Accuracy: 0.9996
+Precision: 0.8795
+Recall: 0.3345
+F1 Score: 0.4847
+AUC-ROC: 0.9862
+Confusion Matrix:
+[[14629183      346]
+ [    5026     2526]]
+
+Evaluation Metrics (Training Data, Threshold 0.4815)
+==================================================
+Accuracy: 0.9995
+Precision: 0.5293
+Recall: 0.5609
+F1 Score: 0.5446
+AUC-ROC: 0.9862
+Confusion Matrix:
+[[14625762     3767]
+ [    3316     4236]]
+
+Evaluation Metrics (Validation Data, Threshold 0.5000)
+==================================================
+Accuracy: 0.9991
+Precision: 0.9638
+Recall: 0.3378
+F1 Score: 0.5003
+AUC-ROC: 0.9868
+Confusion Matrix:
+[[5098504      83]
+ [   4336    2212]]
+
+Evaluation Metrics (Validation Data, Threshold 0.4815)
+==================================================
+Accuracy: 0.9992
+Precision: 0.7493
+Recall: 0.5651
+F1 Score: 0.6443
+AUC-ROC: 0.9868
+Confusion Matrix:
+[[5097349    1238]
+ [   2848    3700]]
+
+Evaluation Metrics (Test Data, Threshold 0.5000)
+==================================================
+Accuracy: 0.9992
+Precision: 0.9307
+Recall: 0.3411
+F1 Score: 0.4993
+AUC-ROC: 0.9845
+Confusion Matrix:
+[[4639072     139]
+ [   3606    1867]]
+
+Evaluation Metrics (Test Data, Threshold 0.4815)
+==================================================
+Accuracy: 0.9992
+Precision: 0.7069
+Recall: 0.5566
+F1 Score: 0.6228
+AUC-ROC: 0.9845
+Confusion Matrix:
+[[4637948    1263]
+ [   2427    3046]]
+
