@@ -228,7 +228,6 @@ if __name__ == "__main__":
     # Get shap explanations
     X_shap = fraudulent_transactions.select(feature_columns).to_numpy()
     #get_shap_explanations(xgb_model, X_train, X_shap, feature_columns, 'shap_importance2.png')
-    print("Here")
     X_shap = X_test
     #get_shap_explanations(xgb_model, X_train, X_shap, feature_columns, 'shap_importance_test_data2.png')
     y_pred = (y_probs_test >= best_threshold).astype(int)

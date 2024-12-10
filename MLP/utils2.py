@@ -118,7 +118,6 @@ class FocalLoss(nn.Module):
             return loss
 
 def scale_data(df: pl.DataFrame) -> pl.DataFrame:
-
     standard_scaler = StandardScaler()
     robust_scaler = RobustScaler()
     # minmax_scaler = MinMaxScaler()
