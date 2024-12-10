@@ -120,7 +120,7 @@ def split_data(df):
 def train_model(model, test_loader, train_loader, val_loader, criterion, optimizer, epochs=10):
     for epoch in range(epochs):
         model.train()
-        train_loss = 0.0
+        train_loss = 0.
 
         for features, labels in train_loader:
             optimizer.zero_grad()
