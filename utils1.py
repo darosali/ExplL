@@ -37,6 +37,7 @@ def f1_importance(model, feature_names, X_train, X_test, y_train, y_test):
         
         # Calculate F1 score
         f1_mod = f1_score(y_test, y_pred_mod)
+
         print(f"F1 score after dropping {feature}: {f1_mod}")
 
 
