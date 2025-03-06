@@ -23,5 +23,5 @@ This project uses the following datasets:
 - [**Amaretto: An Active Learning Framework for Money Laundering Detection**](https://doi.org/10.1109/ACCESS.2022.3167699)
   Labanca, Danilo and Primerano, Luca and Markland-Montgomery, Marcus and Polino, Mario and Carminati, Michele and Zanero, Stefano.  
   [Amaretto Dataset - A Synthetic Capital Market Dataset](https://github.com/necst/amaretto_dataset)
-- [**Synthesizing Credit Card Transactions**](https://arxiv.org/abs/1910.03033)
+- [**Synthesizing Credit Card Transactions**](https://arxiv.org/abs/1910.03033)  
   Erik R. Altman
