@@ -15,7 +15,7 @@ This project explores the use of **SHAP (SHapley Additive exPlanations)** to pro
 ## Report  
 For a detailed analysis, methodology, and results, please refer to the full report:  
 
-📄 [Read the full report](https://github.com/darosali/explainable-latent-classifiers)  
+📄 [Read the full report](https://github.com/darosali/ExplL/blob/main/Explainable%20Classification%20of%20Financial%20Transactions.pdf)  
 
 ## Citation 
 
